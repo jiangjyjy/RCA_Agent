@@ -48,7 +48,18 @@ Use this repo as a landing page to route into either workflow.
 - STaR-CS: structured JSONs, de-identified JSONs, dialogue skeletons, therapist style report, and labeled synthetic dialogues (all under `STaR-CS/output/`).
 - RCA_Agent: generation logs (`stage1_generation.jsonl`, `viz_data.jsonl`) and scored results (`experiment_results.jsonl`).
 
+## Case-Study Comparison: RCA vs. Baselines
+
+We conducted a case-study evaluation to compare the **RCA Agent** against several baseline models (GLM-4.7, GPT-4o, GPT-5, Gemini-3-flash, Kimi-K2-Instruct) under challenging, high-stakes Cognitive Stimulation Therapy (CST) scenarios.
+
+For the full Cantonese dialogue transcripts and model-by-model comparisons, see the following cases:
+* **Case 1: Safety & Validation (Delusion)** - Handling a patient agitated by the delusion that their deceased mother is waiting for them.
+* **Case 2: Conflict Resolution (Paranoia vs. Dignity)** - Handling a theft accusation between two elderly participants.
+
+> **Note:** Full case study transcripts and labels are available in `case_study.pdf`.
+
 ## Tips
+
 - Logs are append-only; delete the `.jsonl` outputs if you want a clean rerun.
 - If BERTScore is missing, scores default to 0.0—install `bert-score` and place the local model to avoid slow downloads.
 - Keep provider rate limits in mind when raising concurrency; throttling will slow runs.
