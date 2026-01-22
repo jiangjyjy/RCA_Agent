@@ -1,0 +1,59 @@
+EMOTION_LABELS = {
+    "Joy": 0, "Trust": 1, "Anticipation": 2, "Surprise": 3,
+    "Sadness": 4, "Fear": 5, "Anger": 6, "Disgust": 7
+}
+
+STRATEGY_LABELS = {
+    "Question": 0, "Restatement or Paraphrasing": 1, "Reflection of Feelings": 2,
+    "Self-disclosure": 3, "Affirmation and Reassurance": 4,
+    "Providing Suggestions": 5, "Information": 6, "Others": 7
+}
+
+CST_PRINCIPLES = {
+    "P-1": "思维刺激：保持思维活跃，设计需努力但不太难的活动，安抚焦虑者，说明科学依据能改善大脑功能。",
+    "P-2": "新构思联想：鼓励新思考而非仅回忆往事；通过对比、开放提问（如异同、偏好）激发新联想，讨论新话题。",
+    "P-3": "暗中导向：用RO板展示日期等信息，结合应季活动自然引导，避免直接质问。",
+    "P-4": "求意见非对错：关注能力，询问意见（无对错）而非测试记忆；避免'记得吗'类问题，可用选择式提问。",
+    "P-5": "怀缅联当下：适度怀缅（避创伤），通过今昔对比（如物价）连接当下，辅助导向。",
+    "P-6": "多提示助专注：用RO板、多感官提示（视/触/听等）及实物辅助记忆；结合语言与非语言沟通。",
+    "P-7": "连贯一致：保持流程、地点、开头结尾（如热身）连贯，辅助记忆。",
+    "P-8": "不自觉学习：让组员在趣味活动中不自觉学习，用间接问题替代直接测试。",
+    "P-9": "促语言表达：通过物件命名、文字游戏等提升语言能力。",
+    "P-10": "促计划组织：借创意活动、分类、比较异同，锻炼计划与组织能力。",
+    "P-11": "以人为本：关注个体独特性（经历、兴趣），聚焦长处而非缺陷。",
+    "P-12": "尊重：维护尊严，尊重文化背景，接纳不同意见与信念。",
+    "P-13": "鼓励参与：减少主导，促进组员互助，明确小组属组员。",
+    "P-14": "包容：关注孤立者（如协助视听障碍），鼓励社交，接纳不同意见。",
+    "P-15": "提供选择：活动灵活，可选组名、难度等，不强迫参与抗拒活动。",
+    "P-16": "营造乐趣：欢乐氛围，避严肃如上课；不用幼稚用具，以成人相待。",
+    "P-17": "发挥潜能：不预设能力，给予时间与提示，鼓励主动参与。",
+    "P-18": "建强关系：促进组员间及与带组者的关系，人本互动共享乐趣。"
+}
+
+CST_SCENES = {
+    '體能活動': '通过轻松的抛球游戏或模仿动作，进行身体活动，并分享与身体、运动相关的感受。',
+    '聲音': '播放不同类别的声音（如动物、乐器），让组员进行识别和联想，或播放歌曲猜歌名。',
+    '童年往事': '引导组员回忆并分享童年时期的游戏、食物、朋友或趣事。',
+    '食物': '讨论有纪念价值或特别意义的食物，分享烹饪经验。',
+    '時事': '讨论一些轻松有趣的报章杂志或电视新闻，分享个人看法。',
+    '人面景物': '展示不同的人物或风景照片，引导组员讨论其异同、表达个人喜好。',
+    '文字聯想': '进行如成语接龙、填字等游戏，促进语言表达能力。',
+    '創意': '进行简单的创意手工或烹饪活动。',
+    '物件分類': '提供多种物品或图片，邀请组员按不同标准进行分类。',
+    '導向': '使用地图、日历或照片，讨论当前位置、日期、季节。',
+    '金錢運用': '使用新旧钱币或道具，讨论物价变化或进行模拟购物。',
+    '數字遊戲': '进行如“排七”、猜大小等简单的数字或纸牌游戏。',
+    '文字遊戲': '进行如“有口難言”、接龙等文字或猜谜游戏。',
+    '小組比賽': '将组员分为两队进行简单的问答或游戏比赛。'
+}
+
+EMOTION_STRATEGY_MAPPING = {
+    "Joy": ["Affirmation and Reassurance", "Information", "Providing Suggestions"],
+    "Trust": ["Question", "Self-disclosure", "Information"],
+    "Anticipation": ["Question", "Providing Suggestions", "Information"],
+    "Surprise": ["Reflection of Feelings", "Affirmation and Reassurance", "Question"],
+    "Sadness": ["Reflection of Feelings", "Affirmation and Reassurance", "Self-disclosure"],
+    "Fear": ["Affirmation and Reassurance", "Providing Suggestions", "Reflection of Feelings"],
+    "Anger": ["Reflection of Feelings", "Restatement or Paraphrasing", "Affirmation and Reassurance"],
+    "Disgust": ["Restatement or Paraphrasing", "Question", "Information"]
+}
