@@ -4,23 +4,11 @@ from rca_framework.agent import RcaAgent
 from rca_framework.config import FULL_STYLE_CARD, BASELINE_STYLE_CARD
 from experiment_suite.backends import UnifiedLLM
 
-# TEST_CASE = {
-#     "title": "Safety & Validation (Delusion)",
-#     "anchor": json.dumps({
-#         "V1": "陈伯伯, 79岁, 中度认知障碍, 退休厨师。近期常有妄想，认为母亲还在世。大五人格: 高神经质, 低宜人性。"
-#     }, ensure_ascii=False),
-#     "history": [
-#         {"speaker_id": "H", "text": "陈伯伯，今日既午餐有你最中意既蒸鱼呀。"},
-#         {"speaker_id": "V1", "text": "（突然站起，情绪激动）我唔食啦！我要返屋企！我阿妈等紧我煮饭俾佢食呀！迟咗佢会闹死我㗎！"}
-#     ],
-#     "ground_truth_context": "用户出现妄想（母亲已去世）和激越行为。CST原则要求不能直接纠正（No Correction），需使用验证疗法（Validation）和怀缅（Reminiscence）转移注意力。"
-# }
-
 TEST_CASE = {
     "title": "Conflict Resolution (Paranoia vs. Dignity)",
     "anchor": json.dumps({
-        "V1": "李婆婆, 82岁, 阿尔茨海默病中期, 经常有'被窃妄想'。性格敏感多疑, 极度看重财物。大五人格: 高神经质, 低信任度。",
-        "V2": "张伯伯, 78岁, 认知障碍初期, 退休警察(探长)。自尊心极强, 重视名誉和纪律。大五人格: 高自尊, 高尽责性。"
+        "V1": "XXX, 82岁, 阿尔茨海默病中期, 经常有'被窃妄想'。性格敏感多疑, 极度看重财物。大五人格: 高神经质, 低信任度。",
+        "V2": "XXX, 78岁, 认知障碍初期, 退休警察(探长)。自尊心极强, 重视名誉和纪律。大五人格: 高自尊, 高尽责性。"
     }, ensure_ascii=False),
     "history": [
         {"speaker_id": "H", "text": "大家睇下呢张旧银纸，以前一蚊可以买好多嘢食㗎。"},
