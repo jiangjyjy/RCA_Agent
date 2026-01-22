@@ -100,7 +100,7 @@ def generate_virtual_patients(num_patients: int = 5) -> Dict[str, str]:
 # 输出格式 (必须严格遵守JSON格式，只返回JSON对象)
 {{ "V1": "角色描述...", "V2": "角色描述...", "V3": "角色描述..." }}
 # 示例
-{{ "V1": "李婆婆, 82岁, 轻度认知障碍, 健谈但记忆力差。大五人格: 高外向性, 低责任心。", "V2": "陈伯伯, 78岁, 曾是教师, 比较严谨。大五人格: 低宜人性, 高责任心。" }}
+{{ "V1": "XXX, 82岁, 轻度认知障碍, 健谈但记忆力差。大五人格: 高外向性, 低责任心。", "V2": "陈伯伯, 78岁, 曾是教师, 比较严谨。大五人格: 低宜人性, 高责任心。" }}
 """
     response_str = _call_api_with_retry(prompt, model=PATIENT_GEN_MODEL, temp=1.0, max_tokens=2048)
     if response_str:
