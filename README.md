@@ -1,4 +1,4 @@
-# A Reflective Cognitive Alignment Framework for Agents in Cognitive Stimulation Care for the Elderly
+# Think Before You Comfort: Reflective Cognitive Alignment for Protocol-Grounded Elderly Stimulation Agents
 
 Two complementary pieces live here:
 - **STaR-CS**: end-to-end cleaning, de-identification, skeleton extraction, style analysis, and synthetic dialogue generation for Cognitive Stimulation Therapy (CST) group sessions.
