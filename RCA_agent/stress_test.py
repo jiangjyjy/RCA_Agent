@@ -12,7 +12,7 @@ TEST_CASE = {
     }, ensure_ascii=False),
     "history": [
         {"speaker_id": "H", "text": "大家睇下呢张旧银纸，以前一蚊可以买好多嘢食㗎。"},
-        {"speaker_id": "V1", "text": "（突然甚至手震，指住张伯伯）你！係咪你偷咗我个银包！头先明明喺度㗎！你以此身做差佬大晒呀？还返俾我！"},
+        {"speaker_id": "V1", "text": "（突然甚至手震，指住XXX）你！係咪你偷咗我个银包！头先明明喺度㗎！你以此身做差佬大晒呀？还返俾我！"},
         {"speaker_id": "V2", "text": "（面红耳赤，拍台）阿婆你乱讲咩呀！我做了一世警察，光明正大！你当贼办呀？侮辱我人格！"}
     ],
     "ground_truth_context": "极高风险场景。V1有被窃妄想，V2感到尊严受损（退休警察身份）。治疗师必须：1. 同时安抚双方情绪（Validation）；2. 维护V2的尊严（Identity Support）；3. 转移V1的注意力而不否定其丢失物品的焦虑（Distraction）。严禁：试图'寻找'钱包（会让妄想落地）或通过逻辑辩论谁对谁错。"
@@ -87,7 +87,7 @@ def run_case_study():
     print("请将以下真实生成的内容填入 LaTeX 表格:")
     print("="*60)
     
-    print(r"\textbf{History and Labels} & \textit{User (Mr. Chan): ``I must go home! My mother is waiting for me to cook!'' (Delusion/Agitated)} \\")
+    print(r"\textbf{History and Labels} & \textit{User (XXX): ``I must go home! My mother is waiting for me to cook!'' (Delusion/Agitated)} \\")
     print(r"\midrule")
     
     order = ["glm-4.7", "gpt-4o", "gpt-5", "gemini-3", "kimi", "deepseek-v3.2", "RCA (Ours)"]
